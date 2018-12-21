@@ -36,7 +36,6 @@ public class AuthRealm extends AuthorizingRealm {
         if (account == null) {
             throw new UnknownAccountException();
         }
-        // TODO: 2018/12/20 fengqian 修改权限
         List<String> privileges = new ArrayList<>();
         privileges.add(account.getName());
         Set<String> roles = new HashSet<>();

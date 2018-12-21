@@ -42,7 +42,6 @@ public class AccountServiceImpl implements AccountService {
     public void deleteOne(Long id) {
         Account account = getOne(id);
         if (account == null) {
-            // TODO: 2018/12/19 fengqian 异常处理
         }
         accountManager.deleteOne(account);
     }
